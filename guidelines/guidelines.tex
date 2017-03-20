@@ -21,13 +21,13 @@
 
 \documentclass[a4paper, french, 10pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
 %\usepackage[a4paper,margin=1.5cm]{geometry}
-%\usepackage{geometry}
-% \geometry{
-% a4paper,
-% total={150mm,257mm},
-% left=30mm,
-% top=20mm,
-% }
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={150mm,257mm},
+ left=30mm,
+ top=20mm,
+ }
 
 \usepackage{babel}
 
@@ -101,7 +101,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{framed}
-Repo du challenge, où vous ce pdf (liens clickables):
+Repo du challenge, où vous trouverez le code et ce pdf:
 
 \url{https://github.com/SoftEng-HEIGVD/Teaching-HEIGVD-RES-2017-StPatrickChallenge}.
 
@@ -111,7 +111,7 @@ Formulaire pour le rendu:
 \end{framed}
 
 \begin{framed}
-Comme annoncé lors de la première leçon, la note de contrôle contenu pour le module RES dépend en partie d'exercices et de tâches proposés tout au long du semestre. Le challenge de la Saint Patrick est la première opportunité de récolter un point. Pour rappel, après 6 opportunités de récolter 1 point, la note est calculée selon la formule \texttt{min(6.0, (nombre de points acquis / 5) + 1)}.
+Comme annoncé lors de la première leçon, la note de contrôle contenu pour le module RES dépend en partie d'exercices et de tâches proposés tout au long du semestre. Le challenge de la Saint Patrick est la première opportunité de récolter un point. Pour rappel, après 6 opportunités de récolter 1 point, la note est calculée selon la formule \texttt{min(6.0, nombre de points acquis + 1)}.
 \end{framed}
 
 
@@ -130,18 +130,23 @@ Comme annoncé lors de la première leçon, la note de contrôle contenu pour le
 
 \section{Objectifs}
 
-Le premier objectif du challenge est de confirmer que vous maîtrisez le workflow de base que nous avons vu avec git et GitHub. Le deuxième objectif est de confirmer que vous êtes au point avec l'utilisation des classes d'entrées-sorties de base (comme mis en pratique dans le labo 01). Finalement, le troisième objectif est de confirmer que vous avez compris le principe de communication client-serveur au dessus de TCP.
+Le premier objectif du challenge est de confirmer que vous maîtrisez le workflow de base que nous avons vu avec git et GitHub. Le deuxième objectif est de confirmer que vous êtes au point avec l'utilisation des classes d'entrées-sorties de base (comme mis en pratique dans le labo 01). Finalement, le troisième objectif est de confirmer que vous avez compris le principe de communication client-serveur au dessus de TCP. Le point est acquis si et seulement si tous les objectifs sont atteints.
 
 
 \section{Déroulement du challenge}
 
 \subsection{Lecture des règles et du déroulement}
+Faites bien attention à l'heure pour pusher vos commits! N'oubliez pas non plus de relever le hash de votre dernier commit.
 \subsection{Fork et clone du repo du challenge}
+Rien de spécial, vous connaissez la routine.
 \subsection{Lecture du code et des tests unitaires}
+Prenez bien le temps de lire les commentaires.
 \subsection{Implémentation du code pour faire passer les tests unitaires}
+Rien de spécial.
 \subsection{Traitement de l'annonce qui surviendra 20 minutes après le début du challenge}
+C'est à cette étape que vous devrez utiliser les commandes git, avant de reprendre le code.
 \subsection{Tâche relative à la communication client-serveur au dessus de TCP}
-\emph{Un leprechaun se cache dans l'ordinateur du professeur. En sachant que l'adresse IP de cet ordinateur est affichée au tableau et que le lerechaun a choisi le port TCP 1703 pour se mettre à votre écoute, vous devriez facilement obtenir la réponse qui vous aidera à gagner le point en jeu.}
+\emph{Un leprechaun se cache dans l'ordinateur du professeur. En sachant que l'adresse IP de cet ordinateur est affichée au tableau et que le leprechaun a choisi le port TCP 1703 pour se mettre à votre écoute, vous devriez facilement obtenir la réponse qui vous aidera à gagner le point en jeu.}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.2\textwidth]{leprechaun}
