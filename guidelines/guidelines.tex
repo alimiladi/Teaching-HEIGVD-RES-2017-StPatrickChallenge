@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, french, 10pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+%\usepackage[a4paper,margin=1.5cm]{geometry}
+%\usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={150mm,257mm},
+% left=30mm,
+% top=20mm,
+% }
+
+\usepackage{babel}
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{framed}
+\usepackage{relsize}
+\graphicspath{ {figures/} }
+
+
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{5pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{-10pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{RES - Challenge de la Saint Patrick} % Subtitle
+
+\author{\textsc{Olivier Liechti}} % Institution
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\renewcommand*{\UrlFont}{\ttfamily\relsize{-2}}
+
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+%\begin{abstract}
+%La digitalisation de la société fait exploser la quantité de logiciel produite chaque année. Au sein de l'axe stratégique en ingénierie logicielle, nous nous intéressons à différents aspects de la création de logiciel. Depuis quelques années, nous avons orienté nos recherches vers la qualité logicielle.
+%\end{abstract}
+
+%\hspace*{3,6mm}\textit{Keywords:} lorem , ipsum , dolor , sit amet , lectus % Keywords
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\begin{framed}
+Repo du challenge, où vous ce pdf (liens clickables):
+
+\url{https://github.com/SoftEng-HEIGVD/Teaching-HEIGVD-RES-2017-StPatrickChallenge}.
+
+Formulaire pour le rendu:
+
+\url{https://goo.gl/forms/LSf39RkatIM5AmkP2}.
+\end{framed}
+
+\begin{framed}
+Comme annoncé lors de la première leçon, la note de contrôle contenu pour le module RES dépend en partie d'exercices et de tâches proposés tout au long du semestre. Le challenge de la Saint Patrick est la première opportunité de récolter un point. Pour rappel, après 6 opportunités de récolter 1 point, la note est calculée selon la formule \texttt{min(6.0, (nombre de points acquis / 5) + 1)}.
+\end{framed}
+
+
+\section{Règles}
+
+\begin{framed}
+\begin{description}
+\item[Règle 1:] il est interdit de communiquer, que ce soit par oral, par écrit ou en utilisant un outil en ligne.
+\item[Règle 2:] en revanche, vous pouvez utiliser vos notes, votre code et faire des recherches sur le web.
+\item[Règle 3:] il est obligatoire de forker le repo contenant la donnée. Il est interdit de pusher des commits vers votre fork avant 12h40 et après 12h45. Après avoir pushé vos commits, il est également obligatoire d'ouvrir une pull request. Finalement, il est obligatoire de copier le hash de votre dernier commit et de le saisir dans le formulaire de rendu.
+\item[Règle 4:] pour récupérer le contenu du labo (tests, code), il est obligatoire d'utiliser les commandes git en ligne de commande. Il est interdit de faire des copier-coller de depuis l'interface web de GitHub pour récupérer des fichiers. Il est aussi interdit d'utiliser la commande "Download zip" offerte par git. Ce que vous pouvez faire via l'interface web, c'est la création de votre fork et la création de pull requests.
+\item[Règle 5:] attention: vous ne pouvez soumettre le formulaire Google Forms qu'une seule fois et vous n'avez pas la possibilité de modifier vos réponses par la suite.
+\item[Règle 6:] quand vous avez terminé, gardez vos commits au chaud (vous pouvez déjà remplir le formulaire Google Forms!). Vous pouvez commencer le labo de la semaine. A 12h40, poussez vos commits vers votre fork et faites la pull request. 
+\end{description}
+\end{framed}
+
+\section{Objectifs}
+
+Le premier objectif du challenge est de confirmer que vous maîtrisez le workflow de base que nous avons vu avec git et GitHub. Le deuxième objectif est de confirmer que vous êtes au point avec l'utilisation des classes d'entrées-sorties de base (comme mis en pratique dans le labo 01). Finalement, le troisième objectif est de confirmer que vous avez compris le principe de communication client-serveur au dessus de TCP.
+
+
+\section{Déroulement du challenge}
+
+\subsection{Lecture des règles et du déroulement}
+\subsection{Fork et clone du repo du challenge}
+\subsection{Lecture du code et des tests unitaires}
+\subsection{Implémentation du code pour faire passer les tests unitaires}
+\subsection{Traitement de l'annonce qui surviendra 20 minutes après le début du challenge}
+\subsection{Tâche relative à la communication client-serveur au dessus de TCP}
+\emph{Un leprechaun se cache dans l'ordinateur du professeur. En sachant que l'adresse IP de cet ordinateur est affichée au tableau et que le lerechaun a choisi le port TCP 1703 pour se mettre à votre écoute, vous devriez facilement obtenir la réponse qui vous aidera à gagner le point en jeu.}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.2\textwidth]{leprechaun}
+\caption{Le leprechaun qui utilise TCP}
+\end{figure}
+\subsection{Soumission des résultats via le formulaire Google Forms}
+
+\begin{enumerate}
+\item votre adresse mail (heig-vd.ch)
+\item votre identifiant GitHub
+\item le hash de votre dernier commit
+\item la réponse que vous aurez obtenue du leprechaun
+\end{enumerate}
+
+\subsection{Entre 12h40 et 12h45: push des commits et ouverture de la pull request}
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
